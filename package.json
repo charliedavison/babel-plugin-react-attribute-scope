@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-react-attribute-scope",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Babel plugin for automatically modifying JSX attributes with React component scope",
   "main": "src/index.js",
   "scripts": {
@@ -17,7 +17,7 @@
     "datahook"
   ],
   "author": "Charlie Davison",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/charliedavison/babel-plugin-react-attribute-scope/issues"
   },
