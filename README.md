@@ -1,2 +1,20 @@
 # babel-plugin-react-attribute-scope
-Automatically modify attribute values with React component scope.
+
+Allows for automatic namespacing of props and attribute values to the React component where they are used.
+
+For example in `login-form.jsx`
+
+`<Button dataHook="button" />` becomes `<Button dataHook="login-form-button" />`
+
+
+
+## Usage
+In `babel.config.js`, add `react-attribute-scope` to your plugins, and specify the `jsxProperty` and `htmlAttribute` you want to transform.
+
+```javascript
+  const plugins = [
+    ['react-attribute-scope', { jsxProperty: 'dataHook', htmlAttribute: 'data-hook' }],
+    ...
+    ];
+```
+
