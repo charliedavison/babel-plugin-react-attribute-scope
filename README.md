@@ -2,6 +2,9 @@
 
 Allows for automatic namespacing of props and attribute values to the React component where they are used.
 
+This is useful for automated testing where you want to ensure your data-hooks, dataIds or whatever convention you are using are unique on an individual page.
+
+
 For example in `login-form.jsx`
 
 `<Button dataHook="button" />` becomes `<Button dataHook="login-form-button" />`
